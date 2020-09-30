@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_UserVehicle">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/appbar_custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/activity_appbar_loggedin"/>
+
+        </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/div_login"
+                android:layout_below="@+id/appbar_custom"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:paddingBottom="50dp">
+
+
+
+                <EditText
+                    android:id="@+id/vehicle_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:width="300dp"
+                    android:background="@drawable/login_edittext_border"
+                    android:hint="@string/login_username"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/violetdark"
+                    android:textColorHint="@color/violetlight"
+                    android:inputType="text"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    />
+
+                <EditText
+                    android:id="@+id/vehicle_registrationNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:width="300dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/login_edittext_border"
+                    android:hint="@string/veichle_registration_number"
+                    android:gravity="center"
+                    android:textColor="@color/violetdark"
+                    android:textColorHint="@color/violetlight"
+                    android:inputType="text"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/vehicle_username"
+                    />
+
+                <EditText
+                    android:id="@+id/vehicle_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:width="300dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/login_edittext_border"
+                    android:hint="@string/veichle_id"
+                    android:gravity="center"
+                    android:textColor="@color/violetdark"
+                    android:textColorHint="@color/violetlight"
+                    android:inputType="text"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/vehicle_registrationNumber"
+                    />
+
+                <EditText
+                    android:id="@+id/vehicle_brand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:width="300dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/login_edittext_border"
+                    android:hint="@string/vehicle_brand"
+                    android:gravity="center"
+                    android:textColor="@color/violetdark"
+                    android:textColorHint="@color/violetlight"
+                    android:inputType="text"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/vehicle_id"
+                    />
+
+                <EditText
+                    android:id="@+id/vehicle_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:width="300dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/login_edittext_border"
+                    android:hint="@string/vehicle_type"
+                    android:gravity="center"
+                    android:textColor="@color/violetdark"
+                    android:textColorHint="@color/violetlight"
+                    android:inputType="text"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/vehicle_brand"
+                    />
+
+
+
+
+                <Button
+                    android:id="@+id/btn_vehicle_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:text="@string/add_vehicle"
+                    android:textAllCaps="false"
+                    android:layout_below="@+id/vehicle_type"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/login_btn"
+                    android:shadowColor="@color/violetdark"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:fontFamily="sans-serif-condensed"
+                    />
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

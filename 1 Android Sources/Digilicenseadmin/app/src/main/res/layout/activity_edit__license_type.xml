@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edit_LicenseType">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/appbar_custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/activity_appbar_loggedout"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/div_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="25dp"
+            android:layout_centerInParent="true">
+
+
+
+            <EditText
+                android:id="@+id/edit_license_type_username"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:width="300dp"
+                android:background="@drawable/login_edittext_border"
+                android:hint="@string/login_username"
+                android:gravity="center"
+                android:textColor="@color/violetdark"
+                android:textColorHint="@color/violetlight"
+                android:inputType="text"
+                android:textSize="20dp"
+                />
+
+            <EditText
+                android:id="@+id/edit_license_type"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:width="300dp"
+                android:background="@drawable/login_edittext_border"
+                android:layout_below="@id/edit_license_type_username"
+                android:layout_marginTop="30dp"
+                android:hint="@string/enter_license_type"
+                android:gravity="center"
+                android:textColor="@color/violetdark"
+                android:textColorHint="@color/violetlight"
+                android:inputType="text"
+                android:textSize="20dp"
+                />
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:layout_below="@+id/edit_license_type"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/login_btn"
+                android:shadowColor="@color/violetdark"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:fontFamily="sans-serif-condensed"
+                />
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/helper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:background="@color/violetlight">
+
+
+
+            <TextView
+                android:id="@+id/label_helper"
+                android:text="@string/types_of_licenses"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+                <LinearLayout
+                    android:id="@+id/row1_liscencetype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/label_helper">
+
+                    <TextView
+                        android:id="@+id/mcwg_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="MCWG :"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:textSize="12dp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/vl_mcwg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fullform_mcwg"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textAllCaps="false"
+                        android:textSize="12dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/mgv_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="MGV :"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:textSize="12dp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/vl_mgv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fullform_mgv"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textAllCaps="false"
+                        android:textSize="12dp"
+                        android:layout_weight="1" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/row2_liscencetype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/row1_liscencetype">
+
+                    <TextView
+                        android:id="@+id/lmv_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="LMV :"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:textSize="12dp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/vl_lmv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fullform_lmv"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textAllCaps="false"
+                        android:textSize="12dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/hmv_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="HMV :"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:textSize="12dp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/vl_hmv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fullform_hmv"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textAllCaps="false"
+                        android:textSize="12dp"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/row3_liscencetype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/row2_liscencetype">
+
+                    <TextView
+                        android:id="@+id/hgmv_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="HGMV :"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:textSize="12dp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/vl_hgmv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fullform_hgmv"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textAllCaps="false"
+                        android:textSize="12dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/hpmv_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="HPMV :"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:textSize="12dp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/vl_hpmv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fullform_hpmv"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textAllCaps="false"
+                        android:textSize="12dp"
+                        android:layout_weight="1" />
+
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF9800</color>
+    <color name="colorPrimaryDark">#9C5F00</color>
+    <color name="colorAccent">#FFB042</color>
+    <color name="greenonpress">#643C00</color>
+    <color name="greenonfocus">#FFD8A2</color>
+    <color name="greendark">#AD6A02</color>
+    <color name="greenlight">#FFB853</color>
+    <color name="deepgreen">#442A0E</color>
+    <color name="red">#FF0000</color>
+
+    <color name="white">#fff</color>
+
+</resources>

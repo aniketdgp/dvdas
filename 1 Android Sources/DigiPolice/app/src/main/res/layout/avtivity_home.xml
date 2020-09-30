@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/appbar_custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/activity_appbar_loggedin"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_below="@+id/appbar_custom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+
+
+                <RelativeLayout
+                    android:id="@+id/row1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageButton
+                                android:id="@+id/btn_viewlicense"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_centerInParent="true"
+                                android:src="@mipmap/imvl"
+                                android:background="@drawable/login_btn"
+                                />
+
+                            <TextView
+                                android:id="@+id/label_viewlicense"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="View User License"
+                                android:textSize="10dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/greenlight"
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_marginTop="20dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_below="@+id/btn_viewlicense"/>
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageButton
+                                android:id="@+id/btn_fineuser"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_centerInParent="true"
+                                android:src="@mipmap/fine"
+                                android:background="@drawable/login_btn"
+
+                                />
+
+
+                            <TextView
+                                android:id="@+id/label_fineuser"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Generate Fine"
+                                android:textSize="10dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/greenlight"
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_marginTop="20dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_below="@+id/btn_fineuser"/>
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/row2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/row1">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageButton
+                                android:id="@+id/btn_report"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_centerInParent="true"
+                                android:src="@mipmap/report"
+                                android:background="@drawable/login_btn"
+                                />
+
+                            <TextView
+                                android:id="@+id/label_report"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Check Report"
+                                android:textSize="10dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/greenlight"
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_marginTop="20dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_below="@+id/btn_report"/>
+
+
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

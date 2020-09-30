@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DigiPolice</string>
+    <string name="screen_name">Screen Name</string>
+    <string name="login">Login</string>
+    <string name="login_password">Password</string>
+    <string name="login_username">Username</string>
+    <string name="no">NA</string>
+    <string name="def_reason">My car is stolene from yesterday afternoon and i cannot get a clue who did that my key is still intact but how can my car be stolen please look in the matter</string>
+    <string name="def_location">Kansihka Near Ram Mandir, Azone , Durgapur , WestBengal , India</string>
+    <string name="reason_for_fine">Reason For Fine</string>
+</resources>

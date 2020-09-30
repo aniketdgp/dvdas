@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#673AB7</color>
+    <color name="colorPrimaryDark">#673AB7</color>
+    <color name="colorAccent">#673AB7</color>
+    <color name="violetonpress">#44198B</color>
+    <color name="violetonfocus">#A175F7</color>
+    <color name="violetdark">#3A137C</color>
+    <color name="violetlight">#A078F0</color>
+    <color name="deepviolet">#1F094B</color>
+    <color name="redwarning">#E46767</color>
+    <color name="redonpress">#AC0F05</color>
+    <color name="redonfocus">#E68782</color>
+    <color name="reddark">#7A1309</color>
+    <color name="redlight">#E79F9B</color>
+
+
+    <color name="white">#fff</color>
+
+</resources>

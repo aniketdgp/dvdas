@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <RelativeLayout
+        android:background="@drawable/report_background"
+        android:layout_width="match_parent"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content">
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/basicinfo"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/reportdheader_background"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/rp_username"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Aniket"
+                android:textSize="15dp"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/rp_date"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="20/04/2019"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/rp_time"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="10:30AM"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+
+            <ImageButton
+                android:id="@+id/btn_report_delete"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:src="@drawable/delete"
+                android:background="@color/colorPrimaryDark"
+                android:layout_gravity="center"
+                android:layout_weight="1"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rv_reason"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/basicinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/reason_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reason:"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+                android:textSize="15dp"
+                android:textColor="@color/white"/>
+
+
+            <TextView
+                android:id="@+id/reason"
+                android:layout_toEndOf="@id/reason_label"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/def_reason"
+                android:gravity="center_vertical"
+                android:textSize="12dp"
+                android:textColor="@color/white"/>
+
+
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/rv_location"
+            android:layout_below="@+id/rv_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+
+            <TextView
+                android:id="@+id/location_label"
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location:"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/white"/>
+
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_toEndOf="@id/location_label"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/def_location"
+                android:gravity="center_vertical"
+                android:textSize="12dp"
+                android:textColor="@color/white"/>
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

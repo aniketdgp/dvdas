@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserLicense">
+
+
+
+
+
+    <RelativeLayout
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/appbar_custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+            <include layout="@layout/activity_appbar_loggedin"/>
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/rv_searchbar"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/appbar_custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/ed_search"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="10"
+                android:hint="Search UserLicense"
+                android:background="@drawable/login_edittext_border"
+                android:gravity="center"
+                android:textColor="@color/greendark"
+                android:textColorHint="@color/greenlight"
+                android:inputType="text"
+                android:textSize="20dp"/>
+
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Search"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:background="@drawable/login_btn"
+                android:shadowColor="@color/greendark"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-condensed"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+        <ScrollView
+            android:id="@+id/ma_scrollView"
+            android:layout_below="@id/rv_searchbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/signup_btn"
+                    android:id="@+id/front_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <RelativeLayout
+                        android:id="@+id/header_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/deepgreen"
+                        android:background="@color/colorPrimaryDark">
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true">
+
+
+                            <TextView
+                                android:id="@+id/uidl"
+                                android:textSize="12dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:text="union_of_indian_driving_license"/>
+
+                            <TextView
+                                android:textSize="12dp"
+                                android:id="@+id/vl_state"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/uidl"
+                                android:text="(West Bengal)"/>
+
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/header_dlno"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_below="@id/header_state"
+                        android:backgroundTint="@color/deepgreen"
+                        android:background="@color/colorPrimary"
+                        >
+
+
+
+                        <TextView
+                            android:id="@+id/vl_dlno"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_centerInParent="true"
+                            android:text="WB 367SHGSJ8912"/>
+
+
+
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/header_basicinfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/header_dlno"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp">
+
+
+
+                        <RelativeLayout
+                            android:id="@+id/profile_image"
+                            android:layout_marginRight="50dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/vl_profile_image"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@mipmap/profile"
+                                app:civ_border_width="2dp"
+                                app:civ_border_color="#FF000000"/>
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/profile_image"
+                            android:layout_centerVertical="true">
+
+
+                            <TextView
+                                android:id="@+id/vl_fullname"
+                                android:text="Rakesh Sharma"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:textSize="18dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/vl_sdof"
+                                android:layout_marginTop="2dp"
+                                android:textColor="@color/white"
+                                android:text="S/D/W/H Of Rishav Sharma"
+                                android:textStyle="bold"
+                                android:textAllCaps="false"
+                                android:textSize="12dp"
+                                android:layout_below="@id/vl_fullname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/vl_age"
+                                android:layout_marginTop="2dp"
+                                android:textColor="@color/white"
+                                android:text="AGE 20"
+                                android:textStyle="bold"
+                                android:textAllCaps="false"
+                                android:textSize="12dp"
+                                android:layout_below="@id/vl_sdof"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/header_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/header_basicinfo">
+
+
+
+                        <LinearLayout
+                            android:id="@+id/row1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp">
+
+
+                            <TextView
+                                android:id="@+id/vl_dateofissue"
+                                android:layout_weight="1"
+                                android:textColor="@color/white"
+                                android:text="Date Of Issue: 23/12/2016"
+                                android:textStyle="bold"
+                                android:textAllCaps="false"
+                                android:textSize="12dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/vl_validtill"
+                                android:layout_weight="1"
+                                android:textColor="@color/white"
+                                android:text="Valid Till : 23/12/2016"
+                                android:textStyle="bold"
+                                android:textAllCaps="false"
+                                android:textSize="12dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/row2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/row1">
+
+
+                            <TextView
+                                android:id="@+id/vl_dob"
+                                android:layout_weight="1"
+                                android:textColor="@color/white"
+                                android:text="DOB: 23/12/1998"
+                                android:textStyle="bold"
+                                android:textAllCaps="false"
+                                android:textSize="12dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/vl_bloodgroup"
+                                android:layout_weight="1"
+                                android:textColor="@color/white"
+                                android:text="Blood Group : A+"
+                                android:textStyle="bold"
+                                android:textAllCaps="false"
+                                android:textSize="12dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/header_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:paddingBottom="60dp"
+                    android:background="@drawable/signup_btn"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_below="@+id/front_view">
+
+
+                    <RelativeLayout
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:id="@+id/address"
+                        android:backgroundTint="@color/deepgreen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:text="Address"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:layout_weight="2"
+                            android:textSize="15dp"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/row_permanentadress"
+                        android:layout_below="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+
+
+                        <TextView
+                            android:id="@+id/vl_permanentaddress_label"
+                            android:layout_marginTop="10dp"
+                            android:text="Permanent Address:"
+                            android:textStyle="bold"
+                            android:layout_weight="8"
+                            android:textAllCaps="true"
+                            android:textSize="12dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/vl_permanentaddress"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold"
+                            android:text="Adress Data"
+                            android:textAllCaps="false"
+                            android:layout_weight="6"
+                            android:textSize="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/white"
+                            android:layout_toRightOf="@id/vl_permanentaddress_label"/>
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/row_currentadress"
+                        android:layout_below="@+id/row_permanentadress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+
+                        <TextView
+                            android:id="@+id/vl_currentaddress_label"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/white"
+                            android:text="Current Address:"
+                            android:textStyle="bold"
+                            android:layout_weight="8"
+                            android:textAllCaps="true"
+                            android:textSize="12dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/vl_currentaddress"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:text="Adress Data"
+                            android:textAllCaps="false"
+                            android:layout_weight="6"
+                            android:textSize="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_toRightOf="@id/vl_permanentaddress_label"/>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+
+
+
+
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/header_licensetype"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:layout_below="@id/header_address"
+                    android:background="@drawable/signup_btn"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+
+
+                    <RelativeLayout
+                        android:id="@+id/licensetype"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimaryDark"
+                        android:backgroundTint="@color/deepgreen">
+
+
+                        <TextView
+                            android:text="License Type"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:textSize="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                    </RelativeLayout>
+
+
+
+
+
+                    <RelativeLayout
+                        android:id="@+id/licensetype_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:layout_below="@+id/licensetype">
+
+
+
+                        <LinearLayout
+                            android:id="@+id/row1_liscencetype"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:id="@+id/mcwg_label"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="MCWG :"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:textSize="12dp"
+                                android:layout_weight="1"/>
+
+                            <TextView
+                                android:id="@+id/vl_mcwg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/no"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:textSize="12dp"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:id="@+id/mgv_label"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="MGV :"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:textSize="12dp"
+                                android:layout_weight="1"/>
+
+                            <TextView
+                                android:id="@+id/vl_mgv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/no"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:textSize="12dp"
+                                android:layout_weight="1" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/row2_liscencetype"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/row1_liscencetype">
+
+                            <TextView
+                                android:id="@+id/lmv_label"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="LMV :"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:textSize="12dp"
+                                android:layout_weight="1"/>
+
+                            <TextView
+                                android:id="@+id/vl_lmv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/no"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:textSize="12dp"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:id="@+id/hmv_label"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="HMV :"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:textSize="12dp"
+                                android:layout_weight="1"/>
+
+                            <TextView
+                                android:id="@+id/vl_hmv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/no"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:textSize="12dp"
+                                android:layout_weight="1" />
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:id="@+id/row3_liscencetype"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/row2_liscencetype">
+
+                            <TextView
+                                android:id="@+id/hgmv_label"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="HGMV :"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:textSize="12dp"
+                                android:layout_weight="1"/>
+
+                            <TextView
+                                android:id="@+id/vl_hgmv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/no"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:textSize="12dp"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:id="@+id/hpmv_label"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="HPMV :"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:textSize="12dp"
+                                android:layout_weight="1"/>
+
+                            <TextView
+                                android:id="@+id/vl_hpmv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/no"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:textSize="12dp"
+                                android:layout_weight="1" />
+
+
+                        </LinearLayout>
+
+
+
+
+                    </RelativeLayout>
+
+
+
+                </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

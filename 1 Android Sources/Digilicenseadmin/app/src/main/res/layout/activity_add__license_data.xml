@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_LicenseData">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/appbar_custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/activity_appbar_loggedin"/>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@id/appbar_custom"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:width="300dp"
+                    android:background="@drawable/login_edittext_border"
+                    android:hint="@string/login_username"
+                    android:gravity="center"
+                    android:textColor="@color/violetdark"
+                    android:textColorHint="@color/violetlight"
+                    android:inputType="text"
+                    android:textSize="20dp"
+                    />
+
+                <EditText
+                    android:id="@+id/state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:width="300dp"
+                    android:background="@drawable/login_edittext_border"
+                    android:hint="@string/state"
+                    android:gravity="center"
+                    android:textColor="@color/violetdark"
+                    android:textColorHint="@color/violetlight"
+                    android:inputType="text"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/username"
+                    />
+
+                <EditText
+                    android:id="@+id/dlno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:width="300dp"
+                    android:background="@drawable/login_edittext_border"
+                    android:hint="@string/dl_number"
+                    android:gravity="center"
+                    android:textColor="@color/violetdark"
+                    android:textColorHint="@color/violetlight"
+                    android:inputType="textEmailAddress"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/state"
+                    />
+
+                <EditText
+                    android:id="@+id/fullname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:width="300dp"
+                    android:background="@drawable/login_edittext_border"
+                    android:hint="@string/fullname"
+                    android:gravity="center"
+                    android:textColor="@color/violetdark"
+                    android:textColorHint="@color/violetlight"
+                    android:inputType="text"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/dlno"
+                    />
+
+                <EditText
+                    android:id="@+id/sdwhof"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:width="300dp"
+                    android:background="@drawable/login_edittext_border"
+                    android:hint="@string/s_d_w_h_of"
+                    android:gravity="center"
+                    android:textColor="@color/violetdark"
+                    android:textColorHint="@color/violetlight"
+                    android:inputType="text"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/fullname"
+                    />
+
+                <EditText
+                    android:id="@+id/dob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:width="300dp"
+                    android:background="@drawable/login_edittext_border"
+                    android:hint="@string/dob"
+                    android:gravity="center"
+                    android:textColor="@color/violetdark"
+                    android:textColorHint="@color/violetlight"
+                    android:inputType="date"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/sdwhof"
+                    />
+
+                <EditText
+                    android:id="@+id/age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:width="300dp"
+                    android:background="@drawable/login_edittext_border"
+                    android:hint="@string/age"
+                    android:gravity="center"
+                    android:textColor="@color/violetdark"
+                    android:textColorHint="@color/violetlight"
+                    android:inputType="number"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/dob"
+                    />
+
+                <EditText
+                    android:id="@+id/dateofissue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:width="300dp"
+                    android:background="@drawable/login_edittext_border"
+                    android:hint="@string/date_of_issue"
+                    android:gravity="center"
+                    android:textColor="@color/violetdark"
+                    android:textColorHint="@color/violetlight"
+                    android:inputType="date"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/age"
+                    />
+
+                <EditText
+                    android:id="@+id/validtill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:width="300dp"
+                    android:background="@drawable/login_edittext_border"
+                    android:hint="@string/valid_till"
+                    android:gravity="center"
+                    android:textColor="@color/violetdark"
+                    android:textColorHint="@color/violetlight"
+                    android:inputType="date"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/dateofissue"
+                    />
+
+                <EditText
+                    android:id="@+id/bloodgroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:width="300dp"
+                    android:background="@drawable/login_edittext_border"
+                    android:hint="@string/blood_group"
+                    android:gravity="center"
+                    android:textColor="@color/violetdark"
+                    android:textColorHint="@color/violetlight"
+                    android:inputType="text"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/validtill"
+                    />
+
+                <EditText
+                    android:id="@+id/permanentaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:width="300dp"
+                    android:background="@drawable/login_edittext_border"
+                    android:hint="@string/permanent_address"
+                    android:gravity="center"
+                    android:textColor="@color/violetdark"
+                    android:textColorHint="@color/violetlight"
+                    android:inputType="textPostalAddress"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/bloodgroup"
+                    />
+
+                <EditText
+                    android:id="@+id/currentaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:width="300dp"
+                    android:background="@drawable/login_edittext_border"
+                    android:hint="@string/current_address"
+                    android:gravity="center"
+                    android:textColor="@color/violetdark"
+                    android:textColorHint="@color/violetlight"
+                    android:inputType="textPostalAddress"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/permanentaddress"
+                    />
+
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/submit"
+                    android:textAllCaps="false"
+                    android:layout_below="@+id/currentaddress"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/login_btn"
+                    android:shadowColor="@color/violetdark"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="15dp"
+                    android:fontFamily="sans-serif-condensed"
+                    />
+
+
+
+
+            </RelativeLayout>
+
+
+
+        </ScrollView>
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

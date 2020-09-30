@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/imv_veichel"
+            android:src="@drawable/car"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rv_veichel_data"
+            android:layout_toRightOf="@+id/imv_veichel"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:id="@+id/veichel_registrationnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registration Number : 78A WB 36-67"
+                />
+
+            <TextView
+                android:id="@+id/veichel_id"
+                android:layout_below="@+id/veichel_registrationnumber"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Veichel ID : Honda346a"
+                />
+
+            <TextView
+                android:id="@+id/veichel_brand"
+                android:layout_below="@+id/veichel_id"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brand : Honda"
+                />
+
+            <TextView
+                android:id="@+id/veichel_type"
+                android:layout_below="@+id/veichel_brand"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type : CAR"
+                />
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

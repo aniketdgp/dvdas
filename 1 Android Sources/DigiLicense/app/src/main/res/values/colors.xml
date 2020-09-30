@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#4CAF50</color>
+    <color name="colorAccent">#4CAF50</color>
+    <color name="greenonpress">#056606</color>
+    <color name="greenonfocus">#C1E7C1</color>
+    <color name="greendark">#15961A</color>
+    <color name="greenlight">#91C794</color>
+    <color name="deepgreen">#134D15</color>
+
+    <color name="white">#fff</color>
+
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DigiLicense</string>
+    <string name="login">Login</string>
+    <string name="login_username">Username</string>
+    <string name="login_password">Password</string>
+    <string name="logged_in_message">Logged In Successfully</string>
+    <string name="email_id">Email ID</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="signup">Signup</string>
+    <string name="screen_name">Screen Name</string>
+    <string name="no">NO</string>
+    <string name="union_of_indian_driving_license">Union of Indian Driving License</string>
+</resources>
